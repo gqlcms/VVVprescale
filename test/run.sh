@@ -1,0 +1,2 @@
+python run.py -m -i /afs/cern.ch/user/x/xulyu/work/public/wjets.root -o ./ --year 2017
+python run.py -d -i /stash/user/qilongguo/work/delete/fake_condor_node/CMSSW_10_6_26/src/Ouput_old.root -o ./ --year 2016 -M 0Lepton_gKK
