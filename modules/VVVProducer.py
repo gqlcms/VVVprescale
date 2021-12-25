@@ -14,7 +14,7 @@ def Process_0Lepton_2fatJets(event):
     muons = Collection(event, 'Muon')
     nLooseMu = 0
     for imu in range(0, event.nMuon):
-      if (event.Muon_highPtId[imu]=='\x02' and event.Muon_tkRelIso[imu] <0.1 and abs(muons[imu].eta)<2.4 and event.Muon_corrected_pt[imu]>20):
+      if (event.Muon_highPtId[imu]=='\x02' and event.Muon_tkRelIso[imu] <0.1 and abs(muons[imu].eta)<2.4 and muons[imu].pt>20):
         nLooseMu += 1
 
     electrons = Collection(event, 'Electron')
